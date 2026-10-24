@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3B0764">
+  <title>TaskFlow Clínica | Agenda médica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="TaskFlow Clínica, início">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span><strong>TaskFlow</strong><small>CLÍNICA VIVER BEM</small></span>
+      </a>
+      <div class="nav-label">MENU PRINCIPAL</div>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio" data-nav="inicio"><span aria-hidden="true">⌂</span> Visão geral</a>
+        <a href="#agenda" data-nav="agenda"><span aria-hidden="true">▦</span> Agenda de consultas</a>
+        <a href="#agendar" data-nav="agendar" data-role="recepcao"><span aria-hidden="true">＋</span> Agendar consulta</a>
+        <a href="#horarios" data-nav="horarios" data-role="medico"><span aria-hidden="true">◷</span> Meus horários</a>
+        <a href="#ajuda" data-nav="ajuda"><span aria-hidden="true">?</span> Como usar</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="privacy-note"><span aria-hidden="true">▣</span><div><strong>Dados neste computador</strong><small>Armazenados localmente no navegador.</small></div></div>
+        <div class="profile-card"><span class="avatar" id="profile-avatar">MS</span><div class="profile-meta"><strong id="profile-name">Mariana Souza</strong><small id="profile-role">Recepção</small></div><span class="online-dot" title="Sessão ativa"></span></div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <div class="breadcrumbs"><span>Clínica Viver Bem</span><span class="crumb-separator">/</span><strong id="page-crumb">Visão geral</strong></div>
+        <div class="top-actions"><label class="profile-switch-label" for="profile-switch">Perfil</label><select id="profile-switch" aria-label="Perfil em uso"><option value="recepcao">Recepção</option><option value="medico-1">Dra. Ana Clara</option><option value="medico-2">Dr. Rafael Mendes</option></select><span class="today-label" id="today-label"></span></div>
+      </header>
+      <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+      <div id="app-content" class="content" tabindex="-1"></div>
+      <footer class="footer-note">TaskFlow Clínica <span>·</span> Agenda simples, cuidado em cada detalhe.</footer>
+    </main>
+  </div>
+  <script src="services/storage.js"></script>
+  <script src="services/appointments.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

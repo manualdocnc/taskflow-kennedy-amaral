@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#d8e3fb","secondary-fixed-dim":"#deb7ff","surface-container-lowest":"#ffffff","secondary-fixed":"#f1dbff","primary":"#5300b7","surface-container":"#e7eeff","on-tertiary-fixed":"#1b1a29","primary-fixed-dim":"#d3bbff","on-tertiary-container":"#d0cce0","on-surface-variant":"#4a4455","surface-tint":"#7331df","secondary":"#7649a0","on-primary-fixed-variant":"#5b00c5","error":"#ba1a1a","error-container":"#ffdad6","primary-container":"#6d28d9","surface-dim":"#cfdaf2","outline":"#7b7486","surface-bright":"#f9f9ff","on-secondary-container":"#5c2f85","tertiary-container":"#585667","inverse-on-surface":"#ecf1ff","on-primary-fixed":"#250059","on-secondary":"#ffffff","on-primary":"#ffffff","inverse-primary":"#d3bbff","on-error-container":"#93000a","on-primary-container":"#dac5ff","tertiary-fixed":"#e4e0f5","on-tertiary-fixed-variant":"#464555","inverse-surface":"#263143","on-error":"#ffffff","tertiary-fixed-dim":"#c7c4d8","surface":"#f9f9ff","on-tertiary":"#ffffff","background":"#f9f9ff","surface-container-high":"#dee8ff","outline-variant":"#ccc3d7","tertiary":"#403f4f","surface-container-low":"#f0f3ff","surface-container-highest":"#d8e3fb","secondary-container":"#d09ffd","on-secondary-fixed-variant":"#5d3186","on-secondary-fixed":"#2d0050","primary-fixed":"#ebddff","on-surface":"#111c2d","on-background":"#111c2d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","space-xl":"2.5rem","gutter-mobile":"1rem","margin":"2rem","space-lg":"1.5rem","gutter":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"headline-sm":["Manrope"],"headline-xl":["Manrope"],"headline-xl-mobile":["Manrope"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Manrope"]},"fontSize":{"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-screen w-64 bg-on-primary-fixed z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs pt-space-xs"><img alt="Logomarca Clínica Médica" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XD5Vph5eaRwKVPjXq6yyNkh8bhddjt1wuhikFlinEVtxeyj-XqfZR5qwTfXf4HJ-Il8lqJVxkMaLwVg_rVFGFyOd9pX-FItFloclWf4UyzooKVc9qmgMYwH6Ka3KbVLetqcVhYGAZD0MwLBH4jaeOi6PCEP5axMNKGZdn9vCkSiiUqyRtg-oggwxshcLxOyAzwuKVatw8O3Q5PZY5SBNye2ntQ0-WNT467BrhAZlqdK0ZlgVVltNucNvN3"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight">MedAgenda</span><span class="font-body-sm text-body-sm text-on-primary-container leading-tight">Clínica Viver Bem</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="visao-geral" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Visão Geral</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="agenda-de-consultas" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Agenda de Consultas</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="agendar-consulta" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Agendar Consulta</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="horarios-disponiveis" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Horários Disponíveis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="ajuda" href="#"><span class="material-symbols-outlined text-[20px]">help_outline</span><span>Ajuda</span></a></nav></div><div class="bg-primary/20 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrwMj7Dp2-hc-_4FqykLlHbOPbb_ewQEoaN6vQbB3ZU45fcwf2ycfLJcK1wQwL4s7TKlbBG9gwj7OS5UQQjHYi_A3y819OILpXTOeLz67-xLTddsPE6XoNo_bz_pCsR27cqaam8taIY9WQj0ZivbpyOHb4HnLADvz6sha9nZDNmXX-zAy1S7Ws8L_DBSU_txV9rC8F_43ierQde82w9Mg9viDlBM9IQv7QNXo-mVlvZmhrVK4Dmvp2A"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-secondary ring-2 ring-on-primary-fixed"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-primary leading-tight">Mariana Souza</span><span class="font-body-sm text-body-sm text-on-primary-container leading-tight">Recepção</span></div></div><button class="text-on-primary-container hover:text-on-primary transition-colors p-space-xs rounded flex items-center justify-center" title="Opções da conta" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span><span>Segunda-feira, 24 de Outubro</span><span class="mx-space-xs text-outline-variant">•</span><span class="text-primary font-bold">09:42</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">add</span><span>Nova Consulta</span></button><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrwMj7Dp2-hc-_4FqykLlHbOPbb_ewQEoaN6vQbB3ZU45fcwf2ycfLJcK1wQwL4s7TKlbBG9gwj7OS5UQQjHYi_A3y819OILpXTOeLz67-xLTddsPE6XoNo_bz_pCsR27cqaam8taIY9WQj0ZivbpyOHb4HnLADvz6sha9nZDNmXX-zAy1S7Ws8L_DBSU_txV9rC8F_43ierQde82w9Mg9viDlBM9IQv7QNXo-mVlvZmhrVK4Dmvp2A"/></div></div></header><main class="relative pt-16 bg-surface w-full px-space-lg min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Welcome Banner & Direct Actions -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm mb-space-lg">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-fixed/35 blur-3xl pointer-events-none"></div>
+<div class="absolute right-48 -bottom-20 w-64 h-64 rounded-full bg-secondary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">medical_information</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Olá, Mariana!</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Recepção Ativa</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Tenha um ótimo dia de atendimentos. Acompanhe a dinâmica da clínica em tempo real.
+          </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">event</span>
+<span>Segunda-feira, 24 de Março de 2025</span>
+<span class="text-outline-variant">•</span>
+<span class="font-semibold text-on-surface">Clínica Viver Bem — Unidade Jardins</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>Atualizar Painel</span>
+</button>
+<button class="group flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-md hover:shadow-lg transition-all duration-200" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-90 duration-300">add</span>
+<span class="font-semibold tracking-wide">Agendar Consulta</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Key Metrics & Performance Indicators Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Consultas Agendadas Hoje -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Consultas Agendadas Hoje</span>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">28</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">pacientes</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-semibold">+4</span>
+<span class="text-on-surface-variant">em relação a ontem</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Horários Disponíveis Hoje -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Horários Vagos Hoje</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">more_time</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">vagas livres</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary ring-2 ring-secondary-fixed"></span>
+<span class="font-semibold text-secondary">Pronto para agendamento</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Atendimentos em Andamento / Concluídos -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Status da Recepção</span>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant shrink-0">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">concluídos</span>
+<span class="text-outline-variant mx-1">•</span>
+<span class="font-headline-sm text-headline-sm text-secondary">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">em espera</span>
+</div>
+<!-- Progress Bar -->
+<div class="mt-space-sm w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Retornos da Semana & Confirmação -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Próximos Retornos</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">event_repeat</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">35</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">nesta semana</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="font-semibold text-primary">94%</span>
+<span>confirmados via sistema</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Operational Shortcuts -->
+<section class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">bolt</span>
+        Ações Rápidas &amp; Fluxos Operacionais
+      </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Atalhos mais frequentes da recepção</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Shortcut 1 -->
+<a class="group flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all shadow-sm" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors shrink-0">
+<span class="material-symbols-outlined text-[24px]">calendar_view_week</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Consultar Agenda Completa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Visualizar grade semanal por consultório</span>
+</div>
+</a>
+<!-- Shortcut 2 -->
+<a class="group flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all shadow-sm" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors shrink-0">
+<span class="material-symbols-outlined text-[24px]">lock_clock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Gerenciar Horários Médicos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Liberar encaixes ou bloquear intervalos</span>
+</div>
+</a>
+<!-- Shortcut 3 -->
+<a class="group flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all shadow-sm" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors shrink-0">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Cadastrar Novo Paciente</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ficha cadastral rápida e convênio</span>
+</div>
+</a>
+<!-- Shortcut 4 -->
+<a class="group flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all shadow-sm" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors shrink-0">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Lembretes WhatsApp</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Disparo automático para amanhã</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Main Appointments Section & Table -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col">
+<!-- Header of the Table: Title + Doctor Filter + Patient Search -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg pb-space-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Próximas Consultas de Hoje</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Lista cronológica dos atendimentos agendados e status de recepção em tempo real
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Doctor Filter Selector -->
+<div class="relative min-w-[240px]">
+<span class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">stethoscope</span>
+</span>
+<select class="w-full pl-9 pr-8 py-2 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="doctorFilter">
+<option value="todos">Todos os Médicos</option>
+<option value="camila">Dra. Camila Rocha (Cardiologia)</option>
+<option value="andre">Dr. André Silveira (Ortopedia)</option>
+<option value="larissa">Dra. Larissa Mendes (Dermatologia)</option>
+<option value="paulo">Dr. Paulo Henrique (Clínica Médica)</option>
+</select>
+<span class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</span>
+</div>
+<!-- Quick Patient Search -->
+<div class="relative min-w-[220px]">
+<span class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</span>
+<input class="w-full pl-9 pr-3 py-2 rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary" id="patientSearch" placeholder="Buscar por paciente ou CPF..." type="text"/>
+</div>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors flex items-center justify-center" title="Filtros avançados" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Structured Schedule Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left" id="appointmentsTable">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-lg">Horário</th>
+<th class="py-3 px-space-md">Paciente</th>
+<th class="py-3 px-space-md">Especialidade &amp; Médico</th>
+<th class="py-3 px-space-md">Tipo</th>
+<th class="py-3 px-space-md">Status</th>
+<th class="py-3 px-space-md text-right rounded-r-lg">Ações Rápidas</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<!-- Row 1: Ana Clara Fontes -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 appointment-row" data-doctor="camila" data-patient="ana clara fontes">
+<td class="py-space-md px-space-md font-semibold text-primary shrink-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span class="font-headline-sm text-headline-sm text-primary">08:30</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ana Clara Fontes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF: ***.429-00 • Unimed Beta</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dra. Camila Rocha</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cardiologia (Consultório 03)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+                Retorno
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container font-semibold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Confirmado
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-sm text-label-sm shadow-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">stethoscope</span>
+<span>Iniciar Atendimento</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Marcos Vinicius Santos -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 appointment-row" data-doctor="andre" data-patient="marcos vinicius santos">
+<td class="py-space-md px-space-md font-semibold text-on-surface shrink-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">09:00</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Marcos Vinicius Santos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF: ***.182-45 • Particular</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dr. André Silveira</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ortopedia (Consultório 01)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+                Primeira Consulta
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Na Recepção
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span>Chamar Paciente</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Beatriz Helena Meireles -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 appointment-row" data-doctor="larissa" data-patient="beatriz helena meireles">
+<td class="py-space-md px-space-md font-semibold text-on-surface shrink-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">09:30</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Beatriz Helena Meireles</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF: ***.801-92 • Bradesco Saúde</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dra. Larissa Mendes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dermatologia (Consultório 05)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+                Consulta de Rotina
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container font-semibold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Confirmado
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Check-in</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Roberto de Almeida Prado -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 appointment-row" data-doctor="paulo" data-patient="roberto de almeida prado">
+<td class="py-space-md px-space-md font-semibold text-on-surface shrink-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">10:15</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Roberto de Almeida Prado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF: ***.315-18 • SulAmérica</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dr. Paulo Henrique</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clínica Médica (Consultório 02)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+                Retorno de Exames
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-semibold">
+<span class="material-symbols-outlined text-[14px]">chat_bubble</span>
+                Confirmado via WhatsApp
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>Ver Prontuário</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Juliana Vasconcelos -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 appointment-row" data-doctor="camila" data-patient="juliana vasconcelos">
+<td class="py-space-md px-space-md font-semibold text-on-surface shrink-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">11:00</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Juliana Vasconcelos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF: ***.940-77 • Amil Fácil</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dra. Camila Rocha</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cardiologia (Consultório 03)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+                Primeira Consulta
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container font-semibold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Confirmado
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Check-in</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Footer Summary -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-md mt-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+        Exibindo <span class="font-semibold text-on-surface">5</span> de <span class="font-semibold text-on-surface">28</span> consultas agendadas para o dia
+      </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm disabled:opacity-50 transition-colors" disabled="" type="button">
+          Anterior
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm" type="button">
+          1
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+          2
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+          3
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+          Próximo
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple client-side search and doctor filtering logic
+  (function() {
+    const searchInput = document.getElementById('patientSearch');
+    const doctorFilter = document.getElementById('doctorFilter');
+    const rows = document.querySelectorAll('.appointment-row');
+
+    function filterAppointments() {
+      const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+      const selectedDoctor = (doctorFilter ? doctorFilter.value : 'todos');
+
+      rows.forEach(row => {
+        const patientName = (row.getAttribute('data-patient') || '').toLowerCase();
+        const doctorKey = row.getAttribute('data-doctor') || '';
+
+        const matchesQuery = !query || patientName.includes(query) || row.textContent.toLowerCase().includes(query);
+        const matchesDoctor = selectedDoctor === 'todos' || doctorKey === selectedDoctor;
+
+        if (matchesQuery && matchesDoctor) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterAppointments);
+    }
+    if (doctorFilter) {
+      doctorFilter.addEventListener('change', filterAppointments);
+    }
+  })();
+</script></main></div></body></html>
